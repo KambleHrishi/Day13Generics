@@ -4,35 +4,17 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Find Maximum of given 3 Strings");
-
-            Console.WriteLine("enter first value");
-            string firstvalue = Console.ReadLine();
-            Console.WriteLine("enter second value");
-            string secondvalue = Console.ReadLine();
-            Console.WriteLine("enter third value");
-            string thirdvalue = Console.ReadLine();
-
-            if (firstvalue.CompareTo(secondvalue) > 0 && firstvalue.CompareTo(thirdvalue) > 0 ||
-                firstvalue.CompareTo(secondvalue) >= 0 && firstvalue.CompareTo(thirdvalue) > 0 ||
-                firstvalue.CompareTo(secondvalue) > 0 && firstvalue.CompareTo(thirdvalue) >= 0)
-            {
-                Console.WriteLine("First value is greater");
-            }
-
-            if (secondvalue.CompareTo(firstvalue) > 0 && secondvalue.CompareTo(thirdvalue) > 0 ||
-                secondvalue.CompareTo(firstvalue) >= 0 && secondvalue.CompareTo(thirdvalue) > 0 ||
-                secondvalue.CompareTo(firstvalue) > 0 && secondvalue.CompareTo(thirdvalue) >= 0)
-            {
-                Console.WriteLine("second value is greater");
-            }
-
-            if (thirdvalue.CompareTo(firstvalue) > 0 && thirdvalue.CompareTo(secondvalue) > 0 ||
-                thirdvalue.CompareTo(firstvalue) >= 0 && thirdvalue.CompareTo(secondvalue) > 0 ||
-                thirdvalue.CompareTo(firstvalue) > 0 && thirdvalue.CompareTo(secondvalue) >= 0)
-            {
-                Console.WriteLine("third value is greater");
-            }
+            Console.WriteLine("Find Maximum of given inputs");
+            int[] intArray = { 100, 321, 900, 200, 250 };
+            GenericMaximum<int> generic = new GenericMaximum<int>(intArray);
+            generic.PrintMaxValue();
+            double[] doubleArray = { 10.2, 30.4, 4.42, 55.5, 6.87 };
+            GenericMaximum<double> genericDouble = new GenericMaximum<double>(doubleArray);
+            genericDouble.PrintMaxValue();
+            string[] stringArray = { "Apple", "Peach", "Banana", "Watermelon", "Guava" };
+            GenericMaximum<string> genericString = new GenericMaximum<string>(stringArray);
+            genericString.PrintMaxValue();
+            Console.ReadLine();
         }
     }
 }

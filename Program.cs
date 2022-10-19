@@ -4,14 +4,14 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Find Maximum of given 3 Floats");
+            Console.WriteLine("Find Maximum of given 3 Strings");
 
             Console.WriteLine("enter first value");
-            double firstvalue = Convert.ToDouble(Console.ReadLine());
+            string firstvalue = Console.ReadLine();
             Console.WriteLine("enter second value");
-            double secondvalue = Convert.ToDouble(Console.ReadLine());
+            string secondvalue = Console.ReadLine();
             Console.WriteLine("enter third value");
-            double thirdvalue = Convert.ToDouble(Console.ReadLine());
+            string thirdvalue = Console.ReadLine();
 
             if (firstvalue.CompareTo(secondvalue) > 0 && firstvalue.CompareTo(thirdvalue) > 0 ||
                 firstvalue.CompareTo(secondvalue) >= 0 && firstvalue.CompareTo(thirdvalue) > 0 ||
@@ -33,7 +33,6 @@
             {
                 Console.WriteLine("third value is greater");
             }
-
         }
     }
 }

@@ -4,14 +4,14 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Find Maximum of given 3 Integers");
+            Console.WriteLine("Find Maximum of given 3 Floats");
 
             Console.WriteLine("enter first value");
-            int firstvalue = Convert.ToInt32(Console.ReadLine());
+            double firstvalue = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("enter second value");
-            int secondvalue = Convert.ToInt32(Console.ReadLine());
+            double secondvalue = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("enter third value");
-            int thirdvalue = Convert.ToInt32(Console.ReadLine());
+            double thirdvalue = Convert.ToDouble(Console.ReadLine());
 
             if (firstvalue.CompareTo(secondvalue) > 0 && firstvalue.CompareTo(thirdvalue) > 0 ||
                 firstvalue.CompareTo(secondvalue) >= 0 && firstvalue.CompareTo(thirdvalue) > 0 ||
@@ -36,5 +36,4 @@
 
         }
     }
-
 }
